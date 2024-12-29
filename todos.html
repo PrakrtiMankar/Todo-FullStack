@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <!--todo operations" add, update, view, delete  -->
+    <nav>
+        <h3>TodoSpace 📜</h3>
+        <div>
+            <a id="active" href="index.html">Home</a>
+            <a href="signup.html">SignUp</a>
+            <a href="login.html">LogIn</a>
+            <a href="todos.html">Todos</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="user-data">
+            
+            <div class="row float-right">
+                <h4 id="user-name"></h4>
+                <button id="logout">Logout</button>
+            </div>
+
+            <div id="add-todo">
+                <form id="form">
+                    <div class="row">
+                        <label for="title">Enter Task Title</label>
+                        <input id="title" type="text" placeholder="Enter title">    
+                    </div>
+
+                    <div class="row">
+                        <label for="deadline">Select Deadline</label>
+                        <input id="deadline" type="date">    
+                    </div>
+
+                    <div class="row">
+                        <label for="priority">Select Priority</label>
+                        <select id="priority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>   
+                    </div>
+
+                    <button type="submit">Add Todo</button>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer style="margin-top: auto;">&copy; All copyrights by prakti-mankar </footer>
+    
+</body>
+<script src="scripts/todos.js" type="module"></script>
+</html>
