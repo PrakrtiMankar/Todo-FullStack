@@ -66,7 +66,7 @@ footer{
     margin: 3rem auto 4rem auto;
     background-color: #1f1b4fd7;
     text-align: center;
-    width: 46%;
+    width: 24rem;
     padding: 1rem 2rem;
     border-radius: 0.6rem;
 }
@@ -75,14 +75,14 @@ footer{
     margin: 6rem auto 10rem auto;
     background-color: #1f1b4fd7;
     text-align: center;
-    width: 38%;
-    padding: 1rem 2rem;
+    width: 24rem;
+    padding: 1rem 2vw;
     border-radius: 0.6rem;
 }
 
 form {
     margin: 1rem auto;
-    width: 62%;
+    width: 18rem;
     text-align: left;
 }
 form div {
@@ -141,7 +141,7 @@ main button {
 }
 
 #add-todo {
-    padding-top: 25vh;
+    padding: 13vh 0px;
 }
 
 #add-todo #form  {
@@ -176,4 +176,29 @@ main form select {
     border: 0px;
     color: lavenderblush;
     padding: 0px 0.6rem;
+}
+
+#todo-box {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: lavenderblush;
+    margin: 2rem 0px;
+    padding: 0.4rem 1.2rem;
+    background-color: #5648aa;
+    border-radius: 1rem;
+    border: 2px solid #8f80e7;
+    box-shadow: 0.6px 0.4px 4px #dec1ed;
+    width: 12rem;
+}
+
+.pending {
+    border: 2px dotted #dec1ed;
+/* border-color: lavenderblush; */
 }
